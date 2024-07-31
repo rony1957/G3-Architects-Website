@@ -1,5 +1,5 @@
 
-.work-sans-font {
+.work-sans-fonts {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -87,6 +87,52 @@ text-align: center;
 /* ----------------------Header area end----------------------- */ 
 
 
+/* Shared style */
+
+.flex{
+    display: flex;
+}
+
+
+
+
+/* -------------------Main area start----------------------------- */
+main{
+margin: 0 auto;
+max-width: 1440px;
+}
+
+.teams{
+    align-items: center;
+    margin-top: 130px;
+}
+
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+.features-tittle{
+    font-size: 2.8rem;
+    font-weight: 700;
+   
+}
+
+.features-discription{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px
+    ;
+}
+
+/* -------------------Main area end------------------------------- */
 
 
 
@@ -94,7 +140,40 @@ text-align: center;
 
 /* Responsive Media Query */
 @media  screen and (max-width:576px) {
+
+
     .navbar, .navbar ul{
         flex-direction: column;
+    }
+
+    /* Feature area */
+
+    .teams{
+        flex-direction: column;
+    }
+
+    .team-image{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .our-features{
+        margin-left: 20px;
+ 
+    }
+
+   
+    /* Feature area */
+}
+
+
+/* Mediam device responsive */
+
+@media  screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+       text-align: center;
     }
 }
